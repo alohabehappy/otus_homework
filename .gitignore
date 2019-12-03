@@ -49,9 +49,12 @@ fastlane/screenshots
 fastlane/test_output
 
 #appcode pref
-idea
+.idea
+
+# Hockey SDK
+HockeySDK-iOS/BuildAgent
 
 # Project
-PROJECT_TITLE.xcodeproj/xcuserdata/
-PROJECT_TITLE.xcworkspace/xcshareddata/
-PROJECT_TITLE.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcshareddata/
+*.xcworkspace/xcuserdata/

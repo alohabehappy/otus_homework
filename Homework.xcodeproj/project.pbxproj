@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,13 @@
 		DDB60F392396CCEC00E6A6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB60F382396CCEC00E6A6BF /* Assets.xcassets */; };
 		DDB60F3C2396CCEC00E6A6BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB60F3B2396CCEC00E6A6BF /* Preview Assets.xcassets */; };
 		DDB60F3F2396CCEC00E6A6BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB60F3D2396CCEC00E6A6BF /* LaunchScreen.storyboard */; };
+		DDB60F482396D50A00E6A6BF /* BetterSheet in Frameworks */ = {isa = PBXBuildFile; productRef = DDB60F472396D50A00E6A6BF /* BetterSheet */; };
+		DDB60F4A2396D81500E6A6BF /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB60F492396D81500E6A6BF /* WelcomeView.swift */; };
+		DDB60F4C2396D82400E6A6BF /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB60F4B2396D82400E6A6BF /* UserListView.swift */; };
+		DDB60F4E2396D82E00E6A6BF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB60F4D2396D82E00E6A6BF /* ProfileView.swift */; };
+		DDB60F502396D83B00E6A6BF /* ProfileDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB60F4F2396D83B00E6A6BF /* ProfileDetailsView.swift */; };
+		DDB60F522396DA3800E6A6BF /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB60F512396DA3800E6A6BF /* UserView.swift */; };
+		DDB60F542396DC7200E6A6BF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB60F532396DC7200E6A6BF /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,12 @@
 		DDB60F3B2396CCEC00E6A6BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DDB60F3E2396CCEC00E6A6BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDB60F402396CCEC00E6A6BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDB60F492396D81500E6A6BF /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		DDB60F4B2396D82400E6A6BF /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		DDB60F4D2396D82E00E6A6BF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		DDB60F4F2396D83B00E6A6BF /* ProfileDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsView.swift; sourceTree = "<group>"; };
+		DDB60F512396DA3800E6A6BF /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		DDB60F532396DC7200E6A6BF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB60F482396D50A00E6A6BF /* BetterSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +73,12 @@
 				DDB60F322396CCEB00E6A6BF /* AppDelegate.swift */,
 				DDB60F342396CCEB00E6A6BF /* SceneDelegate.swift */,
 				DDB60F362396CCEB00E6A6BF /* RootView.swift */,
+				DDB60F492396D81500E6A6BF /* WelcomeView.swift */,
+				DDB60F532396DC7200E6A6BF /* User.swift */,
+				DDB60F4B2396D82400E6A6BF /* UserListView.swift */,
+				DDB60F512396DA3800E6A6BF /* UserView.swift */,
+				DDB60F4D2396D82E00E6A6BF /* ProfileView.swift */,
+				DDB60F4F2396D83B00E6A6BF /* ProfileDetailsView.swift */,
 				DDB60F382396CCEC00E6A6BF /* Assets.xcassets */,
 				DDB60F3D2396CCEC00E6A6BF /* LaunchScreen.storyboard */,
 				DDB60F402396CCEC00E6A6BF /* Info.plist */,
@@ -91,6 +111,9 @@
 			dependencies = (
 			);
 			name = Homework;
+			packageProductDependencies = (
+				DDB60F472396D50A00E6A6BF /* BetterSheet */,
+			);
 			productName = Homework;
 			productReference = DDB60F2F2396CCEB00E6A6BF /* Homework.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +142,9 @@
 				Base,
 			);
 			mainGroup = DDB60F262396CCEB00E6A6BF;
+			packageReferences = (
+				DDB60F462396D50A00E6A6BF /* XCRemoteSwiftPackageReference "BetterSheet" */,
+			);
 			productRefGroup = DDB60F302396CCEB00E6A6BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -148,7 +174,13 @@
 			files = (
 				DDB60F332396CCEB00E6A6BF /* AppDelegate.swift in Sources */,
 				DDB60F352396CCEB00E6A6BF /* SceneDelegate.swift in Sources */,
+				DDB60F4C2396D82400E6A6BF /* UserListView.swift in Sources */,
+				DDB60F522396DA3800E6A6BF /* UserView.swift in Sources */,
 				DDB60F372396CCEB00E6A6BF /* RootView.swift in Sources */,
+				DDB60F542396DC7200E6A6BF /* User.swift in Sources */,
+				DDB60F502396D83B00E6A6BF /* ProfileDetailsView.swift in Sources */,
+				DDB60F4E2396D82E00E6A6BF /* ProfileView.swift in Sources */,
+				DDB60F4A2396D81500E6A6BF /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDB60F462396D50A00E6A6BF /* XCRemoteSwiftPackageReference "BetterSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/egeniq/BetterSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDB60F472396D50A00E6A6BF /* BetterSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDB60F462396D50A00E6A6BF /* XCRemoteSwiftPackageReference "BetterSheet" */;
+			productName = BetterSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DDB60F272396CCEB00E6A6BF /* Project object */;
 }
