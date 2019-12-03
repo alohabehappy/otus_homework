@@ -7,11 +7,42 @@
 //
 
 import SwiftUI
+import Combine
 
 struct RootView: View {
+    
+    @State var selected = 0
+    
     var body: some View {
-        Text("Hello, World!")
+        
+        TabView(selection: $selected) {
+            WelcomeView(selected: $selected)
+                .tabItem {
+                    VStack {
+                        Text("Welcome")
+                        Image(systemName: "play")
+                    }
+                }
+                .tag(0)
+            UserListView()
+                .tabItem {
+                    VStack {
+                        Text("List")
+                        Image(systemName: "list.bullet")
+                    }
+                }
+                .tag(1)
+            ProfileView()
+                .tabItem {
+                    VStack {
+                        Text("Profile")
+                        Image(systemName: "person")
+                    }
+                }
+                .tag(2)
+        }
     }
+    
 }
 
 struct RootView_Previews: PreviewProvider {
